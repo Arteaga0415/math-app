@@ -27,8 +27,21 @@ describe("MathOperations Funciona correctamente", () => {
     expect(MathOperations.divide(10, 0)).toBe("Error: División por cero");
   });
 
+  it("Multiplica arreglos Correctamente", () => {
+    expect(MathOperations.arrayMultiply([1, 2, 3], 2)).toEqual([2, 4, 6]);
+    expect(MathOperations.arrayMultiply([1, 2, 3], 3)).toEqual([3, 6, 9]);
+    expect(MathOperations.arrayMultiply([1, 2, 3], -2)).toEqual([-2, -4, -6]);
+    expect(MathOperations.arrayMultiply([0, 0, 0], 2)).toEqual([0, 0, 0]);
+  });
+
+  it("Divide arreglos Correctamente", () => {
+    expect(MathOperations.arrayDivide([1, 2, 3], 2)).toEqual([0.5, 1, 1.5]);
+    expect(MathOperations.arrayDivide([1, 2, 3], 1)).toEqual([1, 2, 3]);
+    expect(MathOperations.arrayDivide([1, 2, 3], -2)).toEqual([-0.5, -1, -1.5]);
+    expect(MathOperations.arrayMultiply([0, 0, 0], 2)).toEqual([0, 0, 0]);
+  });
+
   it("Math asyncOperation multiplica arrelgos", async () => {
-    // const result = await MathOperations.asyncArrayMultiply([1, 2, 3], 2);
     expect(await MathOperations.asyncArrayMultiply([1, 2, 3], 2)).toEqual([
       2, 4, 6,
     ]);
