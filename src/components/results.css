@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.row-container {
+  gap: 0px 2rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.result {
+  width: 3.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
