@@ -16,14 +16,3 @@ const Results = ({ result }) => {
 Results.propTypes = { result: PropTypes.string.isRequired };
 
 export default Results;
-
-import { renderHook, act } from "@testing-library/react";
-import useCounter from "./useCounter";
-
-test("Incrementa el contador", () => {
-  const { result } = renderHook(() => useCounter());
-  act(() => {
-    result.current.increment();
-  });
-  expect(result.current.count).toBe(1);
-});
