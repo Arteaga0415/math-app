@@ -42,7 +42,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-container">
-      <h1>Calculadora</h1>
+      <h1 style={{ color: "red" }}>Calculadora</h1>
       <div className="input-container">
         <Input value={num1} setValue={setNum1} testId="num1" />
         <Input value={num2} setValue={setNum2} testId="num2" />
