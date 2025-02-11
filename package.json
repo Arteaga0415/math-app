@@ -1,7 +1,7 @@
 {
   "name": "math-app",
   "version": "0.1.0",
-  "homepage": "https://{Arteaga0415}.github.io/{calculator-app}",
+  "homepage": "https://Arteaga0415.github.io/calculator-app",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
